@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DreamSpace Interiors</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+    body {background:#0e0e0e;color:#fff;}
+
+    header {
+      display:flex;justify-content:space-between;align-items:center;
+      padding:20px 50px;background:#000;position:sticky;top:0;z-index:1000;
+    }
+
+    header h1 {color:#d4af37;}
+
+    nav a {
+      color:#fff;margin-left:25px;text-decoration:none;font-size:15px;
+      transition:0.3s;
+    }
+    nav a:hover {color:#d4af37;}
+
+    .hero {
+      height:100vh;
+      background:url('https://images.unsplash.com/photo-1505691723518-36a5ac3b2d5c') center/cover;
+      display:flex;align-items:center;justify-content:center;text-align:center;
+    }
+
+    .hero h2 {
+      font-size:52px;background:rgba(0,0,0,0.6);padding:25px;border-radius:12px;
+      animation:fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+      from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}
+    }
+
+    .section {padding:70px 50px;text-align:center;}
+    .section h2 {margin-bottom:30px;color:#d4af37;}
+
+    .services, .portfolio {
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;
+    }
+
+    .card {
+      background:#1a1a1a;padding:25px;border-radius:12px;
+      transition:0.4s;box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .card:hover {transform:translateY(-10px);}
+
+    .portfolio img {width:100%;border-radius:12px;}
+
+    .contact form, .booking form {
+      max-width:520px;margin:auto;display:flex;flex-direction:column;gap:15px;
+    }
+
+    input, textarea, select {
+      padding:12px;border:none;border-radius:6px;
+    }
+
+    button {
+      padding:13px;border:none;border-radius:6px;
+      background:#d4af37;color:black;font-weight:600;cursor:pointer;
+    }
+
+    footer {
+      background:black;text-align:center;padding:25px;margin-top:50px;
+    }
+
+    /* WhatsApp Floating Button */
+    .whatsapp {
+      position:fixed;bottom:20px;right:20px;background:#25d366;color:white;
+      padding:14px 18px;border-radius:50px;font-size:18px;text-decoration:none;
+      box-shadow:0 4px 15px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>DreamSpace Interiors</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Projects</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h2>Luxury Interior Designs That Inspire Living</h2>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <h2>About Us</h2>
+  <p>We create premium residential and commercial interiors with a blend of elegance, functionality, and modern luxury.</p>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Home Interior</h3>
+      <p>Elegant and modern home interior solutions.</p>
+    </div>
+    <div class="card">
+      <h3>Office Design</h3>
+      <p>Productive and stylish workspace designs.</p>
+    </div>
+    <div class="card">
+      <h3>Renovation</h3>
+      <p>Complete transformation of your space.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="portfolio">
+  <h2>Our Projects</h2>
+  <div class="portfolio">
+    <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb">
+    <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+    <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858">
+    <img src="https://images.unsplash.com/photo-1507089947367-19c1da9775ae">
+  </div>
+</section>
+
+<!-- BOOKING FORM -->
+<section class="section booking" id="booking">
+  <h2>Book Consultation</h2>
+  <form>
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <select>
+      <option>Home Interior</option>
+      <option>Office Design</option>
+      <option>Renovation</option>
+    </select>
+    <textarea rows="4" placeholder="Project Details"></textarea>
+    <button type="submit">Book Now</button>
+  </form>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button>Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 DreamSpace Interiors | Luxury Interior Company</p>
+</footer>
+
+<!-- WhatsApp Button -->
+<a class="whatsapp" href="https://wa.me/919999999999" target="_blank">WhatsApp</a>
+
+</body>
+</html>
